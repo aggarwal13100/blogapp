@@ -16,7 +16,6 @@ export default function AppContextProvider({children}) {
 
     // fetching the Blog Posts
     async function fetchBlogPosts(page=1 , tag = null , category) {
-        console.log(`page = ${page} tag = ${tag} category = ${category}`)
         // Enable Loading screen while fetching the posts
         setLoading(true);
         
