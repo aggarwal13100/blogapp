@@ -20,7 +20,7 @@ const Header = () => {
       <h1 className='text-2xl text-text-primary italic font-bold text-center py-2 relative'>
         <Link to='/'>Trending Blogs</Link>
       </h1>
-      <span className='absolute right-28 bottom-2'>
+      <span className='absolute [760px]:right-28 sm:right-16 right-8 bottom-2'>
         <button
         className=' p-2 rounded-full bg-bg-primary shadow-bg-primary text-text-primary'
          title={`Switch to ${darkMode? "Light Mode" : "Dark Mode"}`}
