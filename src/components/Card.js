@@ -8,11 +8,13 @@ const Card = ({post}) => {
         <NavLink to={`/blog/${id}`}>
             <p className='font-semibold text-text-primary text-lg italic'>{title}</p>
         </NavLink>
-        <div className='flex justify-between  text-text-primary text-sm my-1'>
+        <div className='flex sm:flex-row     flex-col sm:justify-between  text-text-primary text-sm my-1'>
+        <div>
             <span className='font-semibold text-text-primary '>{`By ${author} on `}
-                <NavLink className={`underline font-bold italic`} to = {`/categories/${category}`}>{category}</NavLink>
             </span>
-            <span className='font-semibold italic text-text-primary text-xs border rounded-md shadow-md px-1'>{date}</span>
+            <NavLink className={`underline font-bold italic`} to = {`/categories/${category}`}>{category}</NavLink>
+        </div>
+            <span className='font-semibold w-fit italic sm:my-0 mt-2 text-text-primary text-xs border rounded-md shadow-md px-1'>{date}</span>
         </div>
         <p className='text-sm py-2 font-[400] text-text-secondary leading-5'>
             {content}

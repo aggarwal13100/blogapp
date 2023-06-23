@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 const Title = ({title}) => {
     const navigate = useNavigate();
     return (
-        <div className=' flex pl-8'>
-            <button  className='border text-text-primary bg-bg-secondary p-1 px-2 rounded-lg text-sm font-semibold'
+        <div className=' flex items-center pl-8'>
+            <button  className='border h-fit text-text-primary bg-bg-secondary p-1 px-2 rounded-lg text-sm font-semibold'
             onClick = {() => navigate(-1)}
             >
             Back
